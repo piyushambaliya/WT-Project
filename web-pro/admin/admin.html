@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>490-E Shop - Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <main class="admin-container">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">490-E Shop</p>
+          <h1>Admin dashboard</h1>
+        </div>
+        <div class="admin-header__actions">
+          <a href="../index.html" class="link-btn">View storefront</a>
+          <a href="add-product.html" class="btn">Add product</a>
+          <button id="logoutBtn" class="btn btn-ghost">Logout</button>
+        </div>
+      </header>
+
+      <section>
+        <table id="productTable" class="product-table">
+          <thead>
+            <tr><th>ID</th><th>Image</th><th>Name</th><th>Category</th><th>Price</th><th>Actions</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script type="module" src="../js/admin.js"></script>
+  </body>
+</html>

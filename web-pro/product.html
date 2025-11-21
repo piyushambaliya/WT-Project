@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>490-E Shop - Product Details</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-left">
+        <a class="logo" href="index.html">490-E Shop</a>
+        <nav class="site-nav">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="index.html" data-nav="deals">Deals</a>
+          <a href="index.html" data-nav="electronics">Electronics</a>
+          <a href="index.html" data-nav="fashion">Fashion</a>
+        </nav>
+      </div>
+      <div class="search">
+        <input type="search" id="searchInput" placeholder="Search the store" />
+      </div>
+      <div class="header-actions">
+        <a href="login.html" class="login">Login</a>
+        <a href="cart.html" class="cart">Cart (<span id="cartCount">0</span>)</a>
+      </div>
+    </header>
+
+    <main class="shell product-page">
+      <nav class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Product</span>
+      </nav>
+      <section id="productDetail"></section>
+    </main>
+
+    <script type="module" src="js/header.js"></script>
+    <script type="module" src="js/navigation.js"></script>
+    <script type="module" src="js/product-detail.js"></script>
+  </body>
+</html>

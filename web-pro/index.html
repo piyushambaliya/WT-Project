@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>490-E Shop - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-left">
+        <a class="logo" href="index.html">490-E Shop</a>
+        <nav class="site-nav">
+          <a href="#" data-nav="home" class="active">Home</a>
+          <a href="#" data-nav="deals">Deals</a>
+          <a href="#" data-nav="electronics">Electronics</a>
+          <a href="#" data-nav="fashion">Fashion</a>
+        </nav>
+      </div>
+      <div class="search">
+        <input type="search" id="searchInput" placeholder="Search for products, brands and more" />
+      </div>
+      <div class="header-actions">
+        <a href="login.html" class="login">Login</a>
+        <a href="cart.html" class="cart">Cart (<span id="cartCount">0</span>)</a>
+      </div>
+    </header>
+
+    <section class="hero-banner shell">
+      <div class="hero-content">
+        <p class="eyebrow">Mega festive deals</p>
+        <h1>New Year Festival Discount - Upgrade your everyday essentials</h1>
+        <p>Shop best-selling electronics, accessories, home and lifestyle picks with fast delivery and easy returns. Special New Year discounts on selected items!</p>
+        <div class="hero-actions">
+          <a href="#productGrid" class="btn">Shop now</a>
+          <a href="#" data-nav="deals" class="link-btn">View deals</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <a href="product.html?id=p7" class="hero-promo-image">
+          <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80" alt="ProTab Max Tablet - New Year Discount" />
+          <div class="discount-badge">
+            <span class="discount-text">Special Offer</span>
+            <span class="discount-percent">Up to 30% OFF</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <main class="shell">
+      <section class="content-layout">
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h3>Categories</h3>
+            <button id="resetFilters" class="btn btn-ghost">Reset</button>
+          </div>
+          <ul id="categoryList" class="category-list"></ul>
+        </aside>
+
+        <section class="products">
+          <div class="product-toolbar">
+            <div>
+              <p class="eyebrow">Curated for you</p>
+              <h2>Top picks</h2>
+            </div>
+            <p id="resultCount" class="muted"></p>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="js/header.js" type="module"></script>
+    <script src="js/navigation.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
